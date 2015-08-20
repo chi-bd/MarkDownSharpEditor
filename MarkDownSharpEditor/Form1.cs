@@ -241,13 +241,7 @@ namespace MarkDownSharpEditor
 					case "r":
 					case "readonly":
 						//読み取り専用＝ビューアモード
-						this.richTextBox1.ScrollBars = RichTextBoxScrollBars.None;
-						this.splitContainer1.SplitterWidth = 1;
-						this.splitContainer1.SplitterDistance = this.splitContainer1.Panel1MinSize = 0;
-						this.splitContainer1.IsSplitterFixed = true;
-
-						this.menuSaveFile.Enabled = this.menuSaveAsFile.Enabled = false;
-						this.menuEdit.Enabled = this.menuViewToolBar.Enabled = this.menuViewWidthEvenly.Enabled = false;
+						changeToViewerMode();
 						break;
 
 					//TODO: 「新しいウィンドウで開く」="/new"などの引数も含まれるので、
@@ -353,6 +347,19 @@ namespace MarkDownSharpEditor
 				//フォームタイトル更新 / Refresh form caption
 				FormTextChange();
 			}
+		}
+
+		//----------------------------------------------------------------------
+		// ビューアモードへ変更
+		//----------------------------------------------------------------------
+		private void changeToViewerMode() {
+			this.richTextBox1.ScrollBars = RichTextBoxScrollBars.None;
+			this.splitContainer1.SplitterWidth = 1;
+			this.splitContainer1.SplitterDistance = this.splitContainer1.Panel1MinSize = 0;
+			this.splitContainer1.IsSplitterFixed = true;
+
+			this.menuSaveFile.Enabled = this.menuSaveAsFile.Enabled = false;
+			this.menuEdit.Enabled = this.menuViewToolBar.Enabled = this.menuViewWidthEvenly.Enabled = false;
 		}
 
 		//----------------------------------------------------------------------
