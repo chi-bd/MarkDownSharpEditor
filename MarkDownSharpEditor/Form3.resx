@@ -557,7 +557,7 @@
     <value>7</value>
   </data>
   <data name="checkBoxEditingHighlightColor.Text" xml:space="preserve">
-    <value>&amp;View hightlight color in editing paragraph</value>
+    <value>&amp;View highlight color in editing paragraph</value>
   </data>
   <data name="&gt;&gt;checkBoxEditingHighlightColor.Name" xml:space="preserve">
     <value>checkBoxEditingHighlightColor</value>
@@ -611,7 +611,7 @@
     <value>5</value>
   </data>
   <data name="labelHighLightColor.Text" xml:space="preserve">
-    <value>Hightlight Color</value>
+    <value>Highlight Color</value>
   </data>
   <data name="labelHighLightColor.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>

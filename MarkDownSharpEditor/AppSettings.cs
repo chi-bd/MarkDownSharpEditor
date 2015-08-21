@@ -247,7 +247,7 @@ namespace MarkDownSharpEditor
     }
 
 		//-----------------------------------
-		// SyntaxHightlighter
+		// SyntaxHighlighter
 		//-----------------------------------
 
     //Markdown

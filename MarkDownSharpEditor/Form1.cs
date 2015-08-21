@@ -503,7 +503,7 @@ namespace MarkDownSharpEditor
 
 			if (backgroundWorker2.IsBusy == false)
 			{
-				//バックグラウンドワーカーへパースを投げる / SyntaxHightlighter on BackgroundWorker
+				//バックグラウンドワーカーへパースを投げる / SyntaxHighlighter on BackgroundWorker
 				backgroundWorker2.RunWorkerAsync(richTextBox1.Text);
 			}
 
@@ -1478,7 +1478,7 @@ namespace MarkDownSharpEditor
 		Timer browserWaitTimer;
 
 		//----------------------------------------------------------------------
-		// BackgroundWorker Syntax hightlighter work
+		// BackgroundWorker Syntax highlighter work
 		//----------------------------------------------------------------------
 		private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
 		{
@@ -1515,14 +1515,14 @@ namespace MarkDownSharpEditor
 			e.Result = result;
 		}
 		//----------------------------------------------------------------------
-		// BackgroundWorker Editor Syntax hightlighter progress changed
+		// BackgroundWorker Editor Syntax highlighter progress changed
 		//----------------------------------------------------------------------
 		private void backgroundWorker2_ProgressChanged(object sender, ProgressChangedEventArgs e)
 		{
 
 		}
 		//----------------------------------------------------------------------
-		// BackgroundWorker Syntax hightlighter completed to work
+		// BackgroundWorker Syntax highlighter completed to work
 		//----------------------------------------------------------------------
 		private void backgroundWorker2_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
 		{
@@ -2675,7 +2675,7 @@ namespace MarkDownSharpEditor
 			_MarkdownSyntaxKeywordAarray = MarkdownSyntaxKeyword.CreateKeywordList();	 //キーワードリストの更新
 			if (backgroundWorker2.IsBusy == false)
 			{
-				//SyntaxHightlighter on BackgroundWorker
+				//SyntaxHighlighter on BackgroundWorker
 				backgroundWorker2.RunWorkerAsync(richTextBox1.Text);
 			}
 

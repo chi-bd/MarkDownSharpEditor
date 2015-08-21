@@ -471,10 +471,10 @@ namespace MarkDownSharpEditor
 			obj.fShowHtmlToClipboardMessage = checkBoxShowHtmlToClipboardMessage.Checked;
 
 			//編集部分をハイライトカラー表示するか
-			//&View hightlight color in editing paragraph
+			//&View highlight color in editing paragraph
 			obj.fHtmlHighLightColor = checkBoxEditingHighlightColor.Checked;
 			//編集部分のハイライトカラー
-			//The hightlight color
+			//The highlight color
 			obj.HtmlHighLightColor = labelHighLightColor.BackColor.ToArgb();
 			//ブラウザープレビューまでの間隔
 			//Interval time of previwing
